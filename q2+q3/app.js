@@ -1,25 +1,25 @@
 // ---------------------Q1---------------------------------------
-// console.log(-5 * 3); 
+// console.log(-5 * 3);
 
-// console.log("JavaScript " + 50); 
+// console.log("JavaScript " + 50);
 
-// console.log(17 % 5); 
+// console.log(17 % 5);
 
-// console.log(5 % 17); 
+// console.log(5 % 17);
 
-// console.log(5 / 10); 
+// console.log(5 / 10);
 
-// console.log(4 === '4'); 
+// console.log(4 === '4');
 
 // console.log(4 != 5);
 
-// console.log(7 <= 8); 
+// console.log(7 <= 8);
 
-// console.log("Hello" + 5); 
+// console.log("Hello" + 5);
 
-// console.log(Math.ceil(8.7) - Math.floor(5.1)); 
+// console.log(Math.ceil(8.7) - Math.floor(5.1));
 
-// console.log(Math.pow(8, 2)); 
+// console.log(Math.pow(8, 2));
 // ---------------------Q2---------------------------------------
 // let msg = prompt("input a number")
 //     alert("msg");
@@ -45,8 +45,8 @@
 //     } else if (number1 > number2) {
 //         console.log("the larger number : " + number1);
 //         alert(number1)
-//     } 
-// ---------------------Q5---------------------------------------       
+//     }
+// ---------------------Q5---------------------------------------
 // let number1 = prompt("Enter the first number:");
 // let number2 = prompt("Enter the second number:");
 // let num1=parseFloat(number1);
@@ -56,7 +56,7 @@
 //     let sum = num1 + num2 ;
 //     alert(sum);
 // }
-// ---------------------Q6---------------------------------------       
+// ---------------------Q6---------------------------------------
 // let number = 9;
 
 // switch(number) {
@@ -91,14 +91,14 @@
 //         console.log("PLEASE TRY AGAIN");
 //         break;
 // }
-// ---------------------Q7---------------------------------------       
+// ---------------------Q7---------------------------------------
 //     var m;
 //    var numbers =  [0,1,2,3,4,5]
 //    for (let i = 0; i < numbers.length;i++) {
 //     m =  numbers[i];
 //     alert(m)
 //   }
-// ---------------------Q8---------------------------------------       
+// ---------------------Q8---------------------------------------
 // let num=[]
 // for (let i=0; i<=5; i++){
 //     num += [i]
@@ -127,4 +127,51 @@
 //     sum += i;
 // }
 // alert("The sum of numbers from 0 to " + number + " is: " + sum);
+// -------------ex3------------------------------------------------------------------------------------------------
+// -------------q1------------
 
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+//   }
+//   console.log(reverseString('532443'));
+// -------------q2------------
+// function printOddEvenNumbers() {
+//    for(let i=0;i<=15;i++)
+//     {
+//         if(i%2==0){
+//             console.log(i+"even");
+//         }
+//         else{
+//             console.log(i+"odd");
+//         }
+//     }
+// }
+//   printOddEvenNumbers();
+// -------------q3------------
+// function order(str) {
+// 	var arr = str.split("");
+// 	res = arr.sort().join("");
+// 	return res;
+// }
+// console.log(order("abdullah"));
+// -------------q4------------
+// function DashevenNum(str) {
+//     var strArr = str.split('');
+//     var numArr = strArr.map(Number);
+//       for(var i = 0; i < numArr.length; i++) {
+//         if(numArr[i-1]%2===0 && numArr[i]%2===0) {
+//           numArr.splice(i, 0, '-');
+//         }
+//       }
+//     return numArr.join('');
+//   }
+//   console.log(DashevenNum('025468'));
+// -------------q5------------
+// function agechecker(age) {
+//   if (age >= 18) {
+//     console.log("adult");
+//   } else {
+//     console.log("minor");
+//   }
+// }
+// agechecker(90);

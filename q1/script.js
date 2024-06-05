@@ -1,6 +1,6 @@
 let name = prompt("Please enter your name:");
 console.log("Hello, " + name + "!");
-
+function checkgender(){
 while (true) {
   var gender = prompt("enter your gender");
   console.log(gender);
@@ -18,6 +18,29 @@ while (true) {
     x = "";
   }
 }
+}
+checkgender()
+// function gender(m,f){
+//   while (true) {
+//   var gender = prompt("enter your gender");
+//   console.log(gender);
+//   var x;
+//   if (m ==="male"){
+//     x = "mr.";
+//     alert("welcome"+ x + ""+ name);
+//   }
+//   else if (gender === "female") {
+//         x = "ms.";
+//         alert("welcome " + x + " " + name);
+//       } else {
+//         alert("gender should be male or female");
+//         x = "";
+//       }
+// }
+
+// }
+
+
 
 let order = prompt("what do you want to order(dount/bakery/coffee/ice cream)?");
 console.log(order);
