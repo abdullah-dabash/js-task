@@ -1,55 +1,60 @@
 let name = prompt("Please enter your name:");
 console.log("Hello, " + name + "!");
-function checkgender(){
-while (true) {
-  var gender = prompt("enter your gender");
-  console.log(gender);
-  var x;
-  if (gender === "male") {
-    x = "mr.";
-    alert("welcome " + x + " " + name);
-    break;
-  } else if (gender === "female") {
-    x = "ms.";
-    alert("welcome " + x + " " + name);
-    break;
-  } else {
-    alert("gender should be male or female");
-    x = "";
+
+let gender;
+
+function checkgender() {
+  while (true) {
+    var inputGender = prompt("Enter your gender");
+    console.log(inputGender);
+    if (inputGender === "male") {
+      gender = "mr.";
+      alert("Welcome " + gender + " " + name);
+      break;
+    } else if (inputGender === "female") {
+      gender = "ms.";
+      alert("Welcome " + gender + " " + name);
+      break;
+    } else {
+      alert("Gender should be male or female");
+      gender = "";
+    }
   }
 }
-}
-checkgender()
-// function gender(m,f){
-//   while (true) {
-//   var gender = prompt("enter your gender");
-//   console.log(gender);
-//   var x;
-//   if (m ==="male"){
-//     x = "mr.";
-//     alert("welcome"+ x + ""+ name);
-//   }
-//   else if (gender === "female") {
-//         x = "ms.";
-//         alert("welcome " + x + " " + name);
-//       } else {
-//         alert("gender should be male or female");
-//         x = "";
-//       }
-// }
 
-// }
+checkgender();
 
-
-
-let order = prompt("what do you want to order(dount/bakery/coffee/ice cream)?");
+let order = prompt("What do you want to order (donut/bakery/coffee/ice cream)?");
 console.log(order);
-alert("your order is being prepared :)");
-console.log(x + name + " " + order);
+alert("Your order is being prepared :)");
+console.log(gender + name + " " + order);
+
 const data = [name, gender, order];
-let m;
 console.log(data);
+
 for (let i = 0; i < data.length; i++) {
-  m = m = data[i];
-  console.log(m);
+  console.log(data[i]);
 }
+
+
+let hero = document.getElementById("hero");
+let text = document.createElement("p");
+text.innerText = "intoduction asdasdasdasdasdasdasdasdas";
+hero.appendChild(text);
+
+const div = document.getElementById("newdiv");
+let p = document.createElement("p");
+p.innerText = "Your info";
+let ol = document.createElement("ol");
+let liname = document.createElement("li");
+liname.textContent = name;
+let ligender = document.createElement("li");
+ligender.textContent = gender;
+let liorder = document.createElement("li");
+liorder.textContent = order;
+div.appendChild(p);
+div.appendChild(ol);
+ol.appendChild(liname);
+ol.appendChild(ligender);
+ol.appendChild(liorder);
+
