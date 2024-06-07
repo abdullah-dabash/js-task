@@ -175,11 +175,47 @@
 //   }
 // }
 // agechecker(90);
-var div = document.createElement("div");
-div.style.width = "100px";
-div.style.height = "100px";
-div.style.background = "red";
-div.style.color = "white";
-div.innerHTML = "Hello";
+// -------------ex4------------------------------------------------------------------------------------------------
+// -------------q1------------
+// var images = [
+//     "pics/1.png",
+//     "pics/2.png",
+//     "pics/3.png",
+//     "pics/4.png",
+//     "pics/5.png"
+// ];
 
-document.getElementById("main").appendChild(div);
+// var imagesList = document.createElement("ol"); 
+
+// images.forEach(function(imageUrl){ 
+//     var li = document.createElement("li");
+//     var img = document.createElement("img");
+//     img.src = imageUrl; 
+//     img.style.maxWidth = "200px";
+//     img.style.maxHeight = "200px"; 
+//     img.style.border = "2px solid #ccc"; 
+//     img.style.borderRadius = "5px"; 
+//     li.appendChild(img); 
+//     imagesList.appendChild(li);
+// });
+
+// document.body.appendChild(imagesList);
+// -------------q2------------
+
+// function findIndex(arr, value) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] === value) {
+//             return i; 
+//         }
+//     }
+//     return -1; 
+// }
+
+
+// var array = [10, 20, 30, 40, 50];
+// var valueToFind = 30;
+// var index = findIndex(array, valueToFind);
+// console.log(index); 
+
+
+
